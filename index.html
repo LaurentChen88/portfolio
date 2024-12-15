@@ -15,7 +15,7 @@
 	<div class="container">
 		<nav class="navbar navbar-expand-lg bg-body-tertiary">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand" href="#accueil">
 					LC
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -32,7 +32,7 @@
 							</a>
 							<ul class="dropdown-menu">
 								<li><a class="dropdown-item" href="#presentation">Présentation</a></li>
-								<li><a class="dropdown-item" href="#formation">Parcours</a></li>
+								<li><a class="dropdown-item" href="#parcours">Parcours</a></li>
 							</ul>
 						</li>
 						<li class="nav-item dropdown">
@@ -41,9 +41,9 @@
 								Compétences
 							</a>
 							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#statistique">Compétences Techniques</a></li>
-								<li><a class="dropdown-item" href="#hard_skills">Technologies et outils</a></li>
-								<li><a class="dropdown-item" href="#autres">Compétences transversales</a></li>
+								<li><a class="dropdown-item" href="#techniques">Compétences Techniques</a></li>
+								<li><a class="dropdown-item" href="#outils">Technologies et outils</a></li>
+								<li><a class="dropdown-item" href="#transversales">Compétences transversales</a></li>
 							</ul>
 						</li>
 						<li class="nav-item dropdown">
@@ -52,8 +52,8 @@
 								Projets
 							</a>
 							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#projets_entreprise">Projets professionnels</a></li>
-								<li><a class="dropdown-item" href="#projets_iut">Projets académiques</a></li>
+								<li><a class="dropdown-item" href="#projets_pros">Projets professionnels</a></li>
+								<li><a class="dropdown-item" href="#projets_academiques">Projets académiques</a></li>
 							</ul>
 						</li>
 						<li class="nav-item">
@@ -102,26 +102,96 @@
 			<img id="photo_Laurent" class="item" src="images/photo_Laurent.jpg" alt="Photo Laurent Chen" />
 			<p id="p_presentation">
 				Actuellement en 3e année en <a class="lien"
-				href="https://iutparis-seine.u-paris.fr/metiers-de-la-data/bachelor-universitaire-de-technologie-stid/"
-				target="_blank">BUT Science des Données (ex STID) à l'IUT Paris - Rives de Seine</a>, 
-				j’apprécie le développement et la découverte de toutes les possibilités qu'il offre. 
-				Travaillant chez <a class="lien"
-				href="https://socio-dm.com/" target="_blank">Socio Data Management</a>, depuis septembre 2023 en tant qu'alternant R&D, 
+					href="https://iutparis-seine.u-paris.fr/metiers-de-la-data/bachelor-universitaire-de-technologie-stid/"
+					target="_blank">BUT Science des Données (ex STID) à l'IUT Paris - Rives de Seine</a>,
+				j’apprécie le développement et la découverte de toutes les possibilités qu'il offre.
+				Travaillant chez <a class="lien" href="https://socio-dm.com/" target="_blank">Socio Data Management</a>,
+				depuis septembre 2023 en tant qu'alternant R&D,
 				je développe une application de questionnaire en Javascript.
 			</p>
 		</div>
 		<!--************************* fin de la section présentation *************************-->
 		<!--************************* début de la section formation *************************-->
-		<div id="formation">
-			<h2 class="title">Parcours</h2>
-			
+		<div id="parcours">
+			<h1 class="title">Parcours</h1>
+			<div class="parcours_container">
+				<h2 class="subtitle">Formations</h2>
+				<div class="timeline">
+					<div class="event">
+						<div class="event-logo">
+							<a href="https://iutparis-seine.u-paris.fr/metiers-de-la-data/bachelor-universitaire-de-technologie-stid/" target="_blank">
+								<img src="images/logo_iut.png" alt="IUT Paris" class="logo">
+							</a>
+						</div>
+						<div class="event-line"></div>
+						<div class="details">
+							<h3><strong>IUT Paris - Rives de Seine</strong></h3>
+							<h3><strong>BUT Science des Données (ex STID)</strong></h3>
+							<span class="date">2022-2025</span>
+							<p>Diplôme bac +3 en cours<br>Parcours Visualisation, Conception d’Outils Décisionnels</p>
+						</div>
+					</div>
+
+					<div class="event">
+						<div class="event-logo">
+							<a href="https://www.bossuetnotredame.org/lycee-bossuet-notre-dame/" target="_blank">
+								<img src="images/logo_bossuet.png" alt="Bossuet Notre-Dame" class="logo">
+							</a>
+						</div>
+						<div class="event-line"></div>
+						<div class="details">
+							<h3><strong>Lycée Bossuet Notre-Dame</strong></h3>
+							<h3><strong>Spécialités Maths SVT (Physique-Chimie)</strong></h3>
+							<span class="date">2019-2022</span>
+							<p>Baccalauréat 2022 mention bien</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="parcours_container">
+				<h2 class="subtitle">Expériences</h2>
+				<div class="timeline">
+					<div class="event">
+						<div class="event-logo">
+							<a href="https://socio-dm.com/" target="_blank">
+								<img src="images/logo_socio.png" alt="Socio Data Management" class="logo">
+							</a>
+						</div>
+						<div class="event-line"></div>
+						<div class="details">
+							<h3><strong>Socio Data Management</strong></h3>
+							<h3><strong>Alternant R&D</strong></h3>
+							<span class="date">2023-2025</span>
+							<p>Je développe principalement une application de questionnaire en mode déconnecté</p>
+						</div>
+					</div>
+
+					<div class="event">
+						<div class="event-logo">
+							<a href="https://u-paris.fr/accompagner-un-etudiant-en-situation-de-handicap/" target="_blank">
+								<img src="images/logo_upc.png" alt="Université Paris Cité" class="logo">
+							</a>
+						</div>
+						<div class="event-line"></div>
+						<div class="details">
+							<h3><strong>Université Paris Cité</strong></h3>
+							<h3><strong>Tutorat - Pôle Handicap</strong></h3>
+							<span class="date">2024</span>
+							<p>Tuteur de deux élèves handicapés en 1ère année en BUT Science des Données, dans les
+								matières statistiques et mathématiques</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 		<!--************************* fin de la section formation *************************-->
 		<!--************************* fin de la page à propos *************************-->
 
 		<!--************************* début de la page compétences *************************-->
 		<!--************************* début de la section Compétences Techniques *************************-->
-		<div id="statistique">
+		<div id="techniques">
 			<h1 class="title">Compétences Techniques</h1>
 			<div class="row row-cols-1 row-cols-md-4 g-4">
 				<div class="col">
@@ -168,7 +238,7 @@
 		</div>
 		<!--************************* fin de la section Compétences Techniques *************************-->
 		<!--************************* début de la section Technologies et outils *************************-->
-		<div id="hard_skills">
+		<div id="outils">
 			<h1 class="title">Technologies et outils</h1>
 			<div class="row row-cols-1 row-cols-md-5 g-5">
 				<div class="col">
@@ -258,7 +328,7 @@
 		</div>
 		<!--************************* fin de la section Technologies et outils *************************-->
 		<!--************************* début de la section Compétences transversales *************************-->
-		<div id="autres">
+		<div id="transversales">
 			<h1 class="title">Compétences transversales</h1>
 			<div class="row row-cols-1 row-cols-md-4 g-4">
 				<div class="col">
@@ -295,7 +365,7 @@
 
 		<!--************************* début de la page projets *************************-->
 		<!--************************* début de la section Projets professionnels *************************-->
-		<div id="projets_entreprise">
+		<div id="projets_pros">
 			<h1 class="title">Projets professionnels</h1>
 			<div class="accordion" id="accordionExample">
 				<div class="accordion-item">
@@ -335,9 +405,9 @@
 				</div>
 			</div>
 		</div>
-		<!--************************* fin de la section projets à l'IUT *************************-->
+		<!--************************* fin de la section Projets professionnels *************************-->
 		<!--************************* début de la section Projets académiques *************************-->
-		<div id="projets_iut">
+		<div id="projets_academiques">
 			<h1 class="title">Projets académiques</h1>
 			<div class="accordion" id="accordionExample">
 				<div class="accordion-item">
