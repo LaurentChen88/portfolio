@@ -292,6 +292,57 @@ h3{
 }
 /* fin style parcours */
 
+/* début style compétences */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+  }
+  
+  .skill {
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill img, .skill svg{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .skill:hover img, .skill:hover svg {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+  }
+
+  .skill i {
+    font-size: 60px;
+  }
+
+  .section_skills {
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+}
+.section_skills h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* fin style compétences */
+  
+  
+  
 
 
 .accordion{
