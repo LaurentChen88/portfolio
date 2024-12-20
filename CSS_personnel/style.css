@@ -293,6 +293,32 @@ h3{
 /* fin style parcours */
 
 /* début style compétences */
+/* début techniques */
+.card-title{
+    font-weight: bold;
+}
+
+.row{
+    margin-top: 10px;
+}
+.col {
+    display: flex;
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+    justify-content: center; /* Centre les sections horizontalement */
+    gap: 20px; /* Espacement entre les sections */
+  }
+
+.card-skills{
+    width: 80%; /* Réduit la largeur de la carte */
+}
+
+.card-skills img{
+    height: 220px;
+    object-fit: cover;
+}
+
+/* fin techniques */
+/* début outil */
 #skills_container {
     display: flex;
     flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
@@ -340,7 +366,7 @@ h3{
     font-size: 1.5em;
     margin: 10px;
 }
-
+/* fin outil */
 /* fin style compétences */
   
   
@@ -494,21 +520,6 @@ footer{
     color: #23A5B0 ;
 }
 
-
-.card {
-	width: 90%;
-    margin: 30px;
-    transition: transform 400ms ease;
-}
-
-.card:hover {
-    transform: scale(1.15);
-}
-
-.card1{
-	width: 70%;
-	margin-left: 15%;
-}
 
 .accordion-button{
 	font-size: 90%;
