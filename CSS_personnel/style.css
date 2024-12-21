@@ -308,11 +308,11 @@ h3{
     gap: 20px; /* Espacement entre les sections */
   }
 
-.card-skills{
+.card{
     width: 80%; /* Réduit la largeur de la carte */
 }
 
-.card-skills img{
+.card img{
     height: 220px;
     object-fit: cover;
 }
@@ -368,9 +368,19 @@ h3{
 }
 /* fin outil */
 /* fin style compétences */
+
+/* début style projets */
   
   
-  
+/* .card-projets{
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.card-projets:hover {
+    transform: scale(1.15);
+} */
+
+/* fin style projets */
 
 
 .accordion{
@@ -463,12 +473,15 @@ h3{
 
 
 .btn{
-	background-color: #23A5B0;
 	transition: transform 400ms ease;
 }
 
 .btn:hover {
     transform: scale(1.15);
+}
+
+.btn-primary{
+    background-color: #23A5B0;
 }
 
 
