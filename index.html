@@ -457,55 +457,118 @@
 			<!--************************* début de la section Projets professionnels *************************-->
 			<div id="projets_pros">
 				<h1 class="title">Projets professionnels</h1>
-				<div class="accordion" id="accordionExample">
-					<div class="accordion-item">
-						<h2 class="accordion-header">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-								data-bs-target="#collapseOneBis" aria-expanded="false" aria-controls="collapseOneBis">
-								Développement d’une fonctionnalité de collecte de données en mode déconnecté pour CAPI |
-								Socio Data Management
-							</button>
-						</h2>
-						<div id="collapseOneBis" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								<strong>Fev.2024 - Mar.2024.</strong> CAPI signifie Computer Assisted Personal
-								Interviewing.
-								Autrement dit, c’est l’une des méthodes de collecte de données qui se déroulent en face
-								à
-								face, avec d’un côté l’enquêteur avec le formulaire dans sa tablette, et de l’autre côté
-								l’interviewé.
-								Socio est le partenaire du Louvre pour réaliser les enquêtes sur les visiteurs du
-								Louvre.
-								Concrètement, les enquêteurs font des interviews avec notre formulaire. Puis par la
-								suite,
-								l’équipe data traite et analyser les données. Le but des enquêtes est de mieux
-								comprendre
-								les visiteurs pour en attirer d’avantage. Cependant, il n’est pas possible de réaliser
-								des
-								interviews sans connexion internet. C’est un problème car certains endroits peuvent très
-								mal
-								voir pas du tout capter la connexion. Ça nous fait perdre du temps, des interviews, et
-								potentiellement la représentativité. J’interviens pour répondre à ce problème,
-								l'objectif
-								est d'implémenter une fonctionnalité permettant de <strong>réaliser des interviews sans
-									connexion.</strong> Pour cela, j'utilise le <strong>stockage local du navigateur
-									pour
-									enregistrer les réponses. <img id="stockLocal_img" src="images/stockage-local.png"
-										alt="stockage local" /><br /> Et j'utilise la technologie PWA </strong> pour
-								transformer notre questionnaire en une application. Je code principalement en
-								<strong>Javascript, html, et css.</strong> Après avoir testé de nombreuses approches,
-								j'ai
-								réalisé une page qui contient le tableau des interviews, avec la possibilité de
-								reprendre
-								une interview, de la supprimer, et d'envoyer au serveur. <img id="capiManager_img"
-									src="images/capiManager.png" alt="capiManager" /> Ce projet m'a permis de me
-								surpasser,
-								car j'ai appris à coder en Javascript, à renforcer ma capacité à chercher, tester, et à
-								déboguer.
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-4 g-4">
+					<!-- Fonctionnalité de collecte de données en mode déconnecté pour CAPI -->
+					<div class="col">
+						<div class="card card-projets">
+							<img src="images/pwa.png" class="card-img-top" alt="Progressive Web App">
+							<div class="card-body">
+								<h5 class="card-title">Fonctionnalité de collecte de données en mode déconnecté pour
+									CAPI</h5>
+								<!-- Section date -->
+								<p class="card-date text-muted">Réalisé en : <strong>Février-Mars 2024</strong></p>
+								<!-- Description -->
+								<p class="card-text">
+									Développement d'une fonctionnalité permettant de réaliser et enregistrer des
+									interviews sans nécessiter de connexion Internet, garantissant une accessibilité et
+									une continuité même en milieu déconnecté.
+								</p>
+								<!-- Section tags -->
+								<div class="card-tags mb-3">
+									<span class="badge bg-primary">JavaScript</span>
+									<span class="badge bg-success">CAPI</span>
+									<span class="badge bg-secondary">Travail en équipe</span>
+									<span class="badge bg-info text-dark">PWA</span>
+									<span class="badge bg-info text-dark">Service Worker</span>
+									<span class="badge bg-warning text-dark">Mode déconnecté</span>
+								</div>
+								<a class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#projet-pwa">
+									<i class="fa-solid fa-magnifying-glass"></i> Détails</a>
 							</div>
 						</div>
 					</div>
 				</div>
+
+				<!-- MODAL -->
+				<!-- Modal Projet Mode déconnecté -->
+				<div class="modal fade" id="projet-pwa" tabindex="-1" aria-labelledby="exampleModalLabel"
+					aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-5" id="exampleModalLabel">Fonctionnalité de collecte de
+									données en mode déconnecté pour CAPI</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"
+									aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								Ce projet a été réalisé dans le cadre de mon alternance chez Socio Data Management.
+								<br />
+								CAPI signifie Computer Assisted Personal
+								Interviewing.
+								Autrement dit, c’est l’une des méthodes de collecte de données qui se déroulent en face
+								à face, avec d’un côté l’enquêteur avec le formulaire dans sa tablette, et de l’autre
+								côté
+								l’interviewé.
+								Concrètement, les enquêteurs font des interviews avec notre formulaire. Puis par la
+								suite, l’équipe data traite et analyser les données. Le but des enquêtes est de mieux
+								comprendre
+								les visiteurs pour en attirer d’avantage. Cependant, il n’est pas possible de réaliser
+								des interviews sans connexion internet. C’est un problème car certains endroits peuvent
+								très
+								mal voir pas du tout capter la connexion. Ça nous fait perdre du temps, des interviews,
+								et
+								potentiellement la représentativité. J’interviens pour répondre à ce problème,
+								l'objectif est d'implémenter une fonctionnalité permettant de <strong>réaliser des
+									interviews sans
+									connexion.</strong> Pour cela, j'utilise le <strong>stockage local</strong> du
+								navigateur
+								pour enregistrer les réponses.
+								<br />
+								<div class="image-container">
+									<img src="images/stockage-local.png" alt="Local Storage">
+									<div class="overlay">
+										<div class="icon-container">
+											<i class="fa-solid fa-eye"></i>
+										</div>
+									</div>
+								</div>
+								<br />
+								Et j'utilise la technologie <strong>Progressive web app PWA </strong> pour
+								transformer notre questionnaire en une application. Tous les ressources nécessaires pour
+								faire tourner le questionnaire sont stockées en cache, cela permet donc de le charger
+								même
+								sans connexion.
+								<br />
+								Je code principalement en
+								<strong>JavaScript, Html, et Css.</strong> Après avoir testé de nombreuses approches,
+								j'ai réalisé une page qui contient le tableau des interviews, avec la possibilité de
+								reprendre
+								une interview, de la supprimer, et d'envoyer au serveur.
+								<br />
+								<div class="image-container">
+									<img src="images/capiManager.png" alt="capiManager">
+									<div class="overlay">
+										<div class="icon-container">
+											<i class="fa-solid fa-eye"></i>
+										</div>
+									</div>
+								</div>
+								<br />
+								Ce projet m'a permis de me surpasser, car j'ai appris à coder en JavaScript, à renforcer
+								ma capacité à chercher, tester, et à
+								déboguer.
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				
 			</div>
 			<!--************************* fin de la section Projets professionnels *************************-->
 			<!--************************* début de la section Projets académiques *************************-->
@@ -704,12 +767,14 @@
 						<div class="card card-projets">
 							<img src="images/graph-RHC.png" class="card-img-top" alt="Graph RHC">
 							<div class="card-body">
-								<h5 class="card-title">Traitement et analyse d’une étude observationnelle en épidémiologie Clinique</h5>
+								<h5 class="card-title">Traitement et analyse d’une étude observationnelle en
+									épidémiologie Clinique</h5>
 								<!-- Section date -->
 								<p class="card-date text-muted">Réalisé en : <strong>Février-Juin 2023</strong></p>
 								<!-- Description -->
 								<p class="card-text">
-									Évaluation de l'efficacité du traitement RHC en soins intensifs pour déterminer son utilité et sa pertinence selon les situations.
+									Évaluation de l'efficacité du traitement RHC en soins intensifs pour déterminer son
+									utilité et sa pertinence selon les situations.
 								</p>
 								<!-- Section tags -->
 								<div class="card-tags mb-3">
@@ -1105,8 +1170,8 @@
 							</div>
 							<div class="modal-footer">
 								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-								<a href="fichiers/Patrick-CHEN_Laurent-CHEN_Jack-CEDENO_Mariam-N'DIAYE_Rapport_Statistique.pdf" class="btn btn-primary"
-									target="_blank">
+								<a href="fichiers/Patrick-CHEN_Laurent-CHEN_Jack-CEDENO_Mariam-N'DIAYE_Rapport_Statistique.pdf"
+									class="btn btn-primary" target="_blank">
 									<i class="fa-solid fa-eye"></i> Voir le rapport</a>
 							</div>
 						</div>
