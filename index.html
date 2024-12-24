@@ -458,6 +458,40 @@
 			<div id="projets_pros">
 				<h1 class="title">Projets professionnels</h1>
 				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-4 g-4">
+					<!-- Projet QuestioJs -->
+					<div class="col">
+						<div class="card card-projets">
+							<img src="images/questioJs.png" class="card-img-top" alt="Questionnaire">
+							<div class="card-body">
+								<h5 class="card-title">Développement d’un Questionnaire Moderne pour les Enquêtes</h5>
+								<!-- Section date -->
+								<p class="card-date text-muted">Réalisé en : <strong>2024 - En cours</strong></p>
+								<!-- Description -->
+								<p class="card-text">
+									Création d’un questionnaire moderne, réutilisable, avec
+									gestion du frontend et backend, intégration de fonctionnalités avancées,
+									déploiement et maintenance.
+								</p>
+								<!-- Section tags -->
+								<div class="card-tags mb-3">
+									<span class="badge bg-primary">JavaScript</span>
+									<span class="badge bg-primary">Html</span>
+									<span class="badge bg-primary">Css</span>
+									<span class="badge bg-primary">Python</span>
+									<span class="badge bg-success">CAPI</span>
+									<span class="badge bg-success">CAWI</span>
+									<span class="badge bg-secondary">Travail en équipe</span>
+									<span class="badge bg-secondary">Autonome</span>
+									<span class="badge bg-info text-dark">MongoDB</span>
+									<span class="badge bg-info text-dark">Flask</span>
+									<span class="badge bg-info text-dark">PWA</span>
+									<span class="badge bg-warning text-dark">Mode déconnecté</span>
+								</div>
+								<a class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#projet-questiojs">
+									<i class="fa-solid fa-magnifying-glass"></i> Détails</a>
+							</div>
+						</div>
+					</div>
 					<!-- Fonctionnalité de collecte de données en mode déconnecté pour CAPI -->
 					<div class="col">
 						<div class="card card-projets">
@@ -490,6 +524,94 @@
 				</div>
 
 				<!-- MODAL -->
+				<!-- Modal questioJs -->
+				<div class="modal fade" id="projet-questiojs" tabindex="-1" aria-labelledby="exampleModalLabel"
+					aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-5" id="exampleModalLabel">Développement d’un Questionnaire
+									Moderne pour les Enquêtes</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"
+									aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								Ce projet a été réalisé dans le cadre de mon alternance chez Socio Data Management.
+								<br /><br />
+								<strong>Description générale :</strong><br />
+								Création d’un questionnaire moderne, réutilisable, avec gestion du frontend et backend,
+								intégration de fonctionnalités avancées, déploiement et maintenance.
+								<br />
+								<div class="image-container">
+									<img src="images/questioJs.png" alt="Questionnaire">
+									<div class="overlay">
+										<div class="icon-container">
+											<i class="fa-solid fa-eye"></i>
+										</div>
+									</div>
+								</div>
+								<br /><br />
+								<strong>L'objectif :</strong><br />
+								Initialement géré par un collègue, il développait les questionnaires en langage ASP, qui
+								n'est plus activement entretenu.
+								Un des points faibles est l’impossibilité de réaliser des interviews sans connexion
+								internet. Cela représente un vrai problème, car certains endroits peuvent avoir une
+								connexion très faible, voire inexistante, ce qui peut entraîner une perte de temps,
+								d'argent et d'opportunités pour les interviews.
+								Mon but est de migrer vers des technologies plus récentes afin de bénéficier de
+								meilleures performances, de fonctionnalités avancées et d'un support à long terme.
+								<br /><br />
+								<strong>Détails techniques :</strong><br />
+								Je développe le frontend avec JavaScript, HTML et CSS, permettant de créer dynamiquement
+								le DOM et d'offrir une interface interactive et responsive. Côté backend, j'utilise
+								Flask pour gérer l’interaction avec le client, et MongoDB pour la gestion des données
+								sous forme NoSQL.
+								On génère le modèle de formulaire automatiquement à partir d’une feuille Excel,
+								facilitant ainsi la création rapide de questionnaires pour diverses enquêtes.
+								<br /><br />
+								<strong>Fonctionnalités :</strong><br />
+								Le questionnaire fonctionne aussi bien en CAPI (Computer Assisted Personal Interviewing)
+								qu’en CAWI (Computer Assisted Web Interviewing). En mode CAPI, les interviews sont
+								réalisées directement sur le terrain via le formulaire sur une tablette, permettant une
+								collecte de données en face à face, avec l’enquêteur d’un côté et l’interviewé de
+								l’autre. En mode CAWI, les interviews
+								sont menées en ligne, permettant aux répondants de remplir le questionnaire à leur
+								propre rythme, à partir de n’importe quel appareil connecté à Internet.
+
+								Le questionnaire inclut plusieurs fonctionnalités avancées, telles que le mode
+								déconnecté grâce au Local Storage et la technologie PWA (Progressive Web App),
+								permettant à l’utilisateur de remplir l’enquête sans connexion Internet.
+								Des filtres personnalisés sont possibles, et un système de suivi des interviews a été
+								mis en place.
+								L’ordre des modalités des questions peut être aléatoire pour garantir une plus grande
+								objectivité.
+								De plus, un système de gestion des quotas a été ajouté pour limiter le nombre de
+								réponses par catégorie. Il marche en CAPI comme en CAWI.
+								<br /><br />
+								<strong>Réutilisabilité et déploiement :</strong><br />
+								Le questionnaire a été conçu pour être facilement réutilisé dans d’autres enquêtes, avec
+								la possibilité de s'adapter à divers contextes. Le projet a été déployé en production
+								pour le LOUVRE, et d’autres clients sont à venir.
+								Je continue de le maintenir tout en ajoutant de nouvelles fonctionnalités au fur et à
+								mesure.
+								<br /><br />
+								<strong>Avis personnels :</strong><br />
+								Ce projet n'a pas été de tout repos. Il m'a parfois fallu ajuster ma trajectoire, comme
+								lorsque nous avons opté pour le développement d'une page web plutôt que d'une extension,
+								afin de mieux suivre les interviews. Parfois, je peux me retrouver bloqué pendant un bon
+								moment, tandis qu'à d'autres, je passe facilement d'une implémentation à l'autre.
+								Avec patience et un bon entourage, j’ai réussi concevoir un outil solide et réellement
+								utilisé. Ce projet a été une expérience enrichissante et je suis fier du résultat.
+								Il m’a permis de développer mes compétences en algorithmique, recherche de
+								solutions, tests et débogage. J’ai gagné en autonomie tout en travaillant efficacement
+								en équipe.
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+							</div>
+						</div>
+					</div>
+				</div>
 				<!-- Modal Projet Mode déconnecté -->
 				<div class="modal fade" id="projet-pwa" tabindex="-1" aria-labelledby="exampleModalLabel"
 					aria-hidden="true">
@@ -567,8 +689,6 @@
 				</div>
 
 
-
-				
 			</div>
 			<!--************************* fin de la section Projets professionnels *************************-->
 			<!--************************* début de la section Projets académiques *************************-->
@@ -646,9 +766,8 @@
 								<!-- Description -->
 								<p class="card-text">
 									Réalisation d'une analyse en composantes principales ACP et de
-									classifications.
-									Après une analyse exploratoire, l'objectif était de réduire le nombre de variables
-									et de regrouper les observations en clusters.
+									classifications. Analyse exploratoire visant à réduire le nombre de variables et à
+									regrouper les observations en clusters.
 								</p>
 								<!-- Section tags -->
 								<div class="card-tags mb-3">
