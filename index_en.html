@@ -1,132 +1,203 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Laurent Chen Portfolio</title>
-		<link rel="shortcut icon" href="images/logo.png" />
-		<link rel="stylesheet" type="text/css" href="CSS_bootstrap/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="CSS_personnel/style.css">
-	</head>
-	
-	<body>
-		<!--************************* début de la barre de navigation *************************-->
-		<div class="container">
-			<nav class="navbar navbar-expand-lg bg-body-tertiary">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="#">
-						<img id="logoSite" src="images/logo.png" alt="Logo Laurent Chen"/>
-					</a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Laurent Chen Portfolio</title>
+	<link rel="shortcut icon" href="images/logo.png" />
+	<link rel="stylesheet" type="text/css" href="CSS_bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS_personnel/style.css">
+	<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+	<!-- icône -->
+</head>
+
+<body>
+	<!--************************* début de la barre de navigation *************************-->
+	<div class="container">
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#accueil">
+					LC
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
 					<ul class="navbar-nav">
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false">
 								About me
 							</a>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="#presentation">Presentation</a></li>
-							<li><a class="dropdown-item" href="#formation">Training courses</a></li>
-							<li><a class="dropdown-item" href="#plus_sur_moi">More about me</a></li>
-						</ul>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#presentation">Presentation</a></li>
+								<li><a class="dropdown-item" href="#parcours">Education & Career</a></li>
+							</ul>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false">
 								Skills
 							</a>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="#statistique">Statistics and Business Intelligence</a></li>
-							<li><a class="dropdown-item" href="#hard_skills">Hard skills</a></li>
-							<li><a class="dropdown-item" href="#autres">Others</a></li>
-						</ul>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#techniques">Technical Skills</a></li>
+								<li><a class="dropdown-item" href="#outils">Technologies & Tools</a></li>
+								<li><a class="dropdown-item" href="#transversales">Transferable Skills</a></li>
+							</ul>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false">
 								Projects
 							</a>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="#projets_entreprise">Company projects</a></li>
-							<li><a class="dropdown-item" href="#projets_iut">University projects</a></li>
-						</ul>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#projets_pros">Professional Projects</a></li>
+								<li><a class="dropdown-item" href="#projets_academiques">Academic Projects</a></li>
+							</ul>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link active" aria-current="page" href="#myForm">Contact me</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false">
 								En
 							</a>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="index.html">Fr</a></li>
-						</ul>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="index.html">Fr</a></li>
+							</ul>
 						</li>
 					</ul>
-					</div>
 				</div>
-			</nav>
-		</div>
-		<!--************************* fin de la barre de navigation *************************-->
-		
-		<!--************************* début de la page d'accueil *************************-->
-		<div id="accueil">
-			<img id="image_accueil" src="images/image_accueil.jpg" alt="fond informatique" />
-			<h1 class="text_accueil">Laurent CHEN</h1>
-			<h2 class="text_accueil">Work-study student in Data Science<br/>R&D Assistant at Socio Data Management</h2>
-		</div>
-		<div id="accueil_smartphone">
-			<img id="image_accueil" src="images/image_accueil2.jpg" alt="fond informatique" />
-			<h1 class="text_accueil">Laurent CHEN</h1>
-			<h2 class="text_accueil">Work-study student in Data Science<br/>R&D Assistant at Socio Data Management</h2>
-		</div>
-		<!--************************* fin de la page d'accueil *************************-->
+			</div>
+		</nav>
+	</div>
+	<!--************************* fin de la barre de navigation *************************-->
 
-		<!--************************* début de la page à propos *************************-->
-		<!--************************* début de la section présentation *************************-->
-		<h1 class="title">About me</h1>
+	<!--************************* début de la page d'accueil *************************-->
+	<section id="accueil">
+		<video class="video-background" autoplay loop muted playsinline>
+			<source src="images/videoAccueilTurquoise.mp4" type="video/mp4">
+			Your browser does not support HTML5 video playback.
+		</video>
+		<div class="centered-container">
+			<div class="centered-div-accueil">
+				<h1>Laurent Chen</h1>
+				<div class="bar"></div>
+				<p>3rd-year student in Statistics and Business Intelligence<br />
+					Work-study student in R&D at Socio Data Management</p>
+			</div>
+		</div>
+	</section>
+	<!-- Conteneur central avec texte et barre -->
+
+	<!--************************* fin de la page d'accueil *************************-->
+
+	<!--************************* début de la page à propos *************************-->
+	<!--************************* début de la section présentation *************************-->
+	<section id="contenu">
 		<div id="presentation">
-			<h2 class="sub_title">Presentation</h2>
-			<img id="photo_Laurent" class="item" src="images/photo_Laurent.jpg" alt="Photo Laurent Chen"/>
-			<p id="p_presentation">
-				Work-study student in 2nd year of  <a class="lien" href="https://iutparis-seine.u-paris.fr/metiers-de-la-data/bachelor-universitaire-de-technologie-stid/" target="_blank">BUT Science des Données à l'IUT Paris - Rives de Seine</a>, I'm interested in data development, management and analysis. I chose to specialize in the Visualization and Design of Business Intelligence Tools course. Working at <a class="lien" href="https://socio-dm.com/" target="_blank">Socio Data Management</a> since September 2023 as an R&D assistant, I'm involved in the development of tools and web applications for business intelligence purposes.
-			</p>
+			<h1 class="title">Presentation</h1>
+			<div id="presentation_container">
+				<img id="photo_Laurent" class="item" src="images/photo_Laurent.jpg" alt="Photo Laurent Chen" />
+				<p id="p_presentation">
+					Currently in my 3rd year of the <a class="lien"
+						href="https://iutparis-seine.u-paris.fr/en/university-bachelors-of-technology-b-u-t-in-statistics-and-business-intelligence/"
+						target="_blank">Statistics and Business Intelligence program at IUT Paris - Rives
+						de Seine</a>, I enjoy development and discovering all the possibilities it offers.
+					Since September 2023, I have been working at <a class="lien" href="https://socio-dm.com/"
+						target="_blank">Socio Data Management</a> as an R&D work-study student,
+					developing a modern questionnaire application.
+				</p>
+			</div>
 		</div>
 		<!--************************* fin de la section présentation *************************-->
 		<!--************************* début de la section formation *************************-->
-		<div id="formation">
-			<h2 class="sub_title">My qualifications / training</h2>
-			<img id="frise_chrono" src="images/frise_chrono_en.png" alt="formations diplômes Laurent"/>
+		<div id="parcours">
+			<h1 class="title">Education & Career</h1>
+			<div class="parcours_container">
+				<h2 class="subtitle">Education</h2>
+				<div class="timeline">
+					<div class="event">
+						<div class="event-logo">
+							<a href="https://iutparis-seine.u-paris.fr/en/university-bachelors-of-technology-b-u-t-in-statistics-and-business-intelligence/"
+								target="_blank">
+								<img src="images/logo_iut.png" alt="IUT Paris" class="logo">
+							</a>
+						</div>
+						<div class="event-line"></div>
+						<div class="details">
+							<h3><strong>IUT Paris - Rives de Seine</strong></h3>
+							<h3><strong>Statistics and Business Intelligence program</strong></h3>
+							<span class="date">2022-2025</span>
+							<p>Bachelor's degree in progress<br>Specialization in Visualization and Decision Support
+								Tools Design</p>
+						</div>
+					</div>
+
+					<div class="event">
+						<div class="event-logo">
+							<a href="https://www.bossuetnotredame.org/lycee-bossuet-notre-dame/" target="_blank">
+								<img src="images/logo_bossuet.png" alt="Bossuet Notre-Dame" class="logo">
+							</a>
+						</div>
+						<div class="event-line"></div>
+						<div class="details">
+							<h3><strong>High school Bossuet Notre-Dame</strong></h3>
+							<h3><strong>Specializations in Mathematics and Life Sciences (Physics-Chemistry)</strong>
+							</h3>
+							<span class="date">2019-2022</span>
+							<p>Baccalaureate 2022 with honors</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="parcours_container">
+				<h2 class="subtitle">Experiences</h2>
+				<div class="timeline">
+					<div class="event">
+						<div class="event-logo">
+							<a href="https://socio-dm.com/" target="_blank">
+								<img src="images/logo_socio.png" alt="Socio Data Management" class="logo">
+							</a>
+						</div>
+						<div class="event-line"></div>
+						<div class="details">
+							<h3><strong>Socio Data Management</strong></h3>
+							<h3><strong>R&D work-study student</strong></h3>
+							<span class="date">2023-2025</span>
+							<p>I am developing a modern questionnaire application</p>
+						</div>
+					</div>
+
+					<div class="event">
+						<div class="event-logo">
+							<a href="https://u-paris.fr/accompagner-un-etudiant-en-situation-de-handicap/"
+								target="_blank">
+								<img src="images/logo_upc.png" alt="Université Paris Cité" class="logo">
+							</a>
+						</div>
+						<div class="event-line"></div>
+						<div class="details">
+							<h3><strong>Université Paris Cité</strong></h3>
+							<h3><strong>Tutoring - Disability Support Center</strong></h3>
+							<span class="date">2024</span>
+							<p>Tutor for two disabled students in their first year of the Statistics and Business
+								Intelligence program, especially in statistics and mathematics</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 		<!--************************* fin de la section formation *************************-->
-		<!--************************* début de la section plus sur moi *************************-->
-		<div id="plus_sur_moi">
-			<h2 class="sub_title">More about me</h2>
-			<div class="content">
-				<img class="img_presentation" src="images/tutorat.png" alt="tutorat image"/>
-				<p class="p_presentation">
-					<strong>Tutelage : Feb.2024-Jun.2024.</strong> Tutor for two disabled students in their 1st year of a Data Science degree,<br/> particularly in statistics and mathematics.
-				</p>
-			</div>
-			<div class="content">
-				<img class="img_presentation" src="images/haltere.png" alt="haltère image"/>
-				<p class="p_presentation">
-					<strong>Sport :</strong> I work out regularly at the gym.
-				</p>
-			</div>
-			<div class="content">
-				<a class="lien" href="https://www.youtube.com/@vif_rosario" target="_blank">
-					<img id="youtube_logo" class="img_presentation" src="images/Youtube_logo.png" alt="tutorat image"/>
-				</a>
-				<p class="p_presentation">
-					<a class="lien" href="https://www.youtube.com/@vif_rosario" target="_blank"><strong>YouTube</strong></a>  : Content creator on the platform during my free time.
-				</p>
-				
-			</div>
-		</div>
-		<!--************************* fin de la section plus sur moi *************************-->
 		<!--************************* fin de la page à propos *************************-->
-		
+
 		<!--************************* début de la page compétences *************************-->
 		<!--************************* début de la section statistiques *************************-->
 		<h1 class="title">Skills</h1>
@@ -135,10 +206,13 @@
 			<div class="row row-cols-1 row-cols-md-4 g-4">
 				<div class="col">
 					<div class="card card1">
-						<img id="microsoft_office_img" src="images/statistiques.jpg" class="card-img-top" alt="Statistiques">
+						<img id="microsoft_office_img" src="images/statistiques.jpg" class="card-img-top"
+							alt="Statistiques">
 						<div class="card-body">
 							<h5 class="card-title">Statistics</h5>
-							<p class="card-text">Analysis and statistical processing of data, survey data processing, time series</p>
+							<p class="card-text">Analysis and statistical processing of data, survey data processing,
+								time
+								series</p>
 						</div>
 					</div>
 				</div>
@@ -147,7 +221,9 @@
 						<img id="web_img" src="images/database.jpg" class="card-img-top" alt="Bases de données">
 						<div class="card-body">
 							<h5 class="card-title">Databases</h5>
-							<p class="card-text">Database querying, management, structuring and processing, data integration</p>
+							<p class="card-text">Database querying, management, structuring and processing, data
+								integration
+							</p>
 						</div>
 					</div>
 				</div>
@@ -162,7 +238,8 @@
 				</div>
 				<div class="col">
 					<div class="card card1">
-						<img id="web_img" src="images/data_visualisation.jpg" class="card-img-top" alt="Data visualisation">
+						<img id="web_img" src="images/data_visualisation.jpg" class="card-img-top"
+							alt="Data visualisation">
 						<div class="card-body">
 							<h5 class="card-title">Data visualization</h5>
 							<p class="card-text">Reporting, data visualization, dashboard</p>
@@ -178,7 +255,8 @@
 			<div class="row row-cols-1 row-cols-md-5 g-5">
 				<div class="col">
 					<div class="card">
-						<img id="microsoft_office_img" src="images/microsoft_office.png" class="card-img-top" alt="Microsoft office">
+						<img id="microsoft_office_img" src="images/microsoft_office.png" class="card-img-top"
+							alt="Microsoft office">
 						<div class="card-body">
 							<h5 class="card-title">Microsoft office</h5>
 							<p class="card-text">Outlook, Access, Word, Excel, Powerpoint, Teams</p>
@@ -187,7 +265,8 @@
 				</div>
 				<div class="col">
 					<div class="card">
-						<img id="web_img" src="images/html_css_javascript.jpg" class="card-img-top" alt="Html css javascript">
+						<img id="web_img" src="images/html_css_javascript.jpg" class="card-img-top"
+							alt="Html css javascript">
 						<div class="card-body">
 							<h5 class="card-title">Web programming</h5>
 							<p class="card-text">Html, Css, Javascript</p>
@@ -295,7 +374,7 @@
 		</div>
 		<!--************************* fin de la section autres *************************-->
 		<!--************************* fin de la section compétences *************************-->
-		
+
 		<!--************************* début de la page projets *************************-->
 		<!--************************* début de la section projets en entreprise *************************-->
 		<h1 class="title">Projects</h1>
@@ -304,14 +383,41 @@
 			<div class="accordion" id="accordionExample">
 				<div class="accordion-item">
 					<h2 class="accordion-header">
-					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneBis" aria-expanded="false" aria-controls="collapseOneBis">
-						Development of an Offline Data Collection functionality for CAPI | Socio Data Management
-					</button>
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseOneBis" aria-expanded="false" aria-controls="collapseOneBis">
+							Development of an Offline Data Collection functionality for CAPI | Socio Data Management
+						</button>
 					</h2>
 					<div id="collapseOneBis" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
-							<strong>Feb.2024 - Mar.2024.</strong> CAPI stands for Computer Assisted Personal Interviewing. In other words, it is a method of data collection that takes place face-to-face, with the interviewer using a tablet to fill out the form and the interviewee providing responses.
-							Socio is the partner of the Louvre for conducting surveys on Louvre visitors. Specifically, the interviewers conduct interviews using our form. Then, the data team processes and analyzes the data. The aim of the surveys is to better understand the visitors to attract more of them. However, it is not possible to conduct interviews without an internet connection. This is a problem because some areas may have poor or no connection at all. This causes us to lose time, interviews, and potentially representativeness. I'm here to solve this problem, the goal is to implement a feature enabling <strong>connectless interviews.</strong> To achieve this, I use the <strong>local storage of the browser to save the responses. <img id="stockLocal_img" src="images/stockage-local.png" alt="local storage"/><br/> Additionally, I use PWA technology </strong> to transform our questionnaire into an application. I code in <strong>JavaScript, HTML, and CSS.</strong> After testing numerous approaches, I created a page that contains the interview table, with options to resume an interview, delete it, and send it to the server. <img id="capiManager_img" src="images/capiManager.png" alt="capiManager"/> This project allowed me to surpass myself, as I learned to code in Javascript, and to strengthen my ability to search and debug.
+							<strong>Feb.2024 - Mar.2024.</strong> CAPI stands for Computer Assisted Personal
+							Interviewing.
+							In other words, it is a method of data collection that takes place face-to-face, with the
+							interviewer using a tablet to fill out the form and the interviewee providing responses.
+							Socio is the partner of the Louvre for conducting surveys on Louvre visitors. Specifically,
+							the
+							interviewers conduct interviews using our form. Then, the data team processes and analyzes
+							the
+							data. The aim of the surveys is to better understand the visitors to attract more of them.
+							However, it is not possible to conduct interviews without an internet connection. This is a
+							problem because some areas may have poor or no connection at all. This causes us to lose
+							time,
+							interviews, and potentially representativeness. I'm here to solve this problem, the goal is
+							to
+							implement a feature enabling <strong>connectless interviews.</strong> To achieve this, I use
+							the
+							<strong>local storage of the browser to save the responses. <img id="stockLocal_img"
+									src="images/stockage-local.png" alt="local storage" /><br /> Additionally, I use PWA
+								technology </strong> to transform our questionnaire into an application. I code in
+							<strong>JavaScript, HTML, and CSS.</strong> After testing numerous approaches, I created a
+							page
+							that contains the interview table, with options to resume an interview, delete it, and send
+							it
+							to the server. <img id="capiManager_img" src="images/capiManager.png" alt="capiManager" />
+							This
+							project allowed me to surpass myself, as I learned to code in Javascript, and to strengthen
+							my
+							ability to search and debug.
 						</div>
 					</div>
 				</div>
@@ -324,110 +430,264 @@
 			<div class="accordion" id="accordionExample">
 				<div class="accordion-item">
 					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
 							PCA and Classifications on Football Players
 						</button>
 					</h2>
 					<div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
-							<strong>May 2024.</strong> With a group of three people, I conducted <strong>PCA and classifications, following an exploratory analysis, on football player data</strong>. The goal is to reduce the number of variables and to group the observations into clusters.<br/>
-							First, I performed the <strong>data cleaning</strong>. To conduct a good analysis of the players over the season, I chose to retain only those who participated significantly. Specifically, this means focusing on players who played more than 5 matches and had an average playing time of more than 45 minutes per match. To facilitate our analysis, I decided to consolidate the player positions into a single position per player: defender (DF), forward (FW), midfielder (MF), or goalkeeper (G).<br/>
+							<strong>May 2024.</strong> With a group of three people, I conducted <strong>PCA and
+								classifications, following an exploratory analysis, on football player data</strong>.
+							The
+							goal is to reduce the number of variables and to group the observations into clusters.<br />
+							First, I performed the <strong>data cleaning</strong>. To conduct a good analysis of the
+							players
+							over the season, I chose to retain only those who participated significantly. Specifically,
+							this
+							means focusing on players who played more than 5 matches and had an average playing time of
+							more
+							than 45 minutes per match. To facilitate our analysis, I decided to consolidate the player
+							positions into a single position per player: defender (DF), forward (FW), midfielder (MF),
+							or
+							goalkeeper (G).<br />
 							Here is an example of <strong>PCA</strong> with axes 1 and 2:
-							<br/><img id="acp_img" src="images/acp.png" alt="PCA"><br/>
-							The variables that contribute the most to axis 1 are SCA, PasAss, Shots, SoT, GCA, ToAtt, PPA, CPA. These variables are all related to offensive play, such as forwards. <strong>We can say that players on the right of the circle have an offensive play style, while players on the left of the circle have a less offensive play style.</strong> <br/>
-							The variables that contribute the most to axis 2 are Rec, Touches, PasAtt, Carries. These variables are strongly related to a style of play that involves a lot of ball control, such as midfielders. <strong>We can say that players at the top of the circle are those who control the ball a lot, while players at the bottom of the circle control the ball less.</strong><br/>
-							However, it was not always easy to determine the number of clusters to keep. 
-							<br/><img id="dendrogramme_img" src="images/dendrogramme.png" alt="dendrogram"><br/>
-							I initially wanted to keep <strong>6 clusters</strong>. But in reality, <strong>3 clusters</strong> were enough, as we cut the tree where there is the largest jump.<br/>
-							I performed the processing and analyses using <strong>R</strong>. I used the <strong>explor</strong> package, which facilitates our study in the context of PCA. The output is an HTML file, generated with <strong>Rmarkdown</strong>.<br/>
+							<br /><img id="acp_img" src="images/acp.png" alt="PCA"><br />
+							The variables that contribute the most to axis 1 are SCA, PasAss, Shots, SoT, GCA, ToAtt,
+							PPA,
+							CPA. These variables are all related to offensive play, such as forwards. <strong>We can say
+								that players on the right of the circle have an offensive play style, while players on
+								the
+								left of the circle have a less offensive play style.</strong> <br />
+							The variables that contribute the most to axis 2 are Rec, Touches, PasAtt, Carries. These
+							variables are strongly related to a style of play that involves a lot of ball control, such
+							as
+							midfielders. <strong>We can say that players at the top of the circle are those who control
+								the
+								ball a lot, while players at the bottom of the circle control the ball
+								less.</strong><br />
+							However, it was not always easy to determine the number of clusters to keep.
+							<br /><img id="dendrogramme_img" src="images/dendrogramme.png" alt="dendrogram"><br />
+							I initially wanted to keep <strong>6 clusters</strong>. But in reality, <strong>3
+								clusters</strong> were enough, as we cut the tree where there is the largest jump.<br />
+							I performed the processing and analyses using <strong>R</strong>. I used the
+							<strong>explor</strong> package, which facilitates our study in the context of PCA. The
+							output
+							is an HTML file, generated with <strong>Rmarkdown</strong>.<br />
 							This project greatly enhanced my teamwork skills and analytical capacity.
 						</div>
 					</div>
 				</div>
 				<div class="accordion-item">
 					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
 							Automation of a Program for Company Data - Web Collection
 						</button>
 					</h2>
 					<div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
-							<strong>Feb.2024 - Mar.2024.</strong> I conducted web data collection.<br/>
-							Using the SIRENE database <a class="lien" href="https://www.data.gouv.fr/fr/datasets/base-sirene-des-entreprises-et-de-leurs-etablissements-siren-siret/">data.gouv.fr</a>,
-							<strong>my goal was to complete the information with geographical coordinates (latitude, longitude) via the address API, and other information (phone number, website) obtained via a Google Maps search, using web scraping</strong>.
-							I worked on the "StockEtablissement" file, which has over <strong>38 million rows and 38 columns</strong>. I also used the "StockUniteLegale" file with <strong>over 26 million rows and 34 columns</strong>.
-							I manipulated the data by coding it in <strong>Python</strong> using libraries like <strong>pandas, Beautiful Soup, Selenium</strong>. In the end, I delivered the <strong>Notebook</strong> and a short report explaining the process and the difficulties encountered.<br/>
-							The files are <strong>very large</strong>, so they need to be read and loaded block by block. I first tested with 1000 rows to make sure that it works before moving on to more rows.<br/>
-							When concatenating variables to get the address or the name of the establishment, there are often missing values. I then removed them. I only kept the variables of interest to optimize the process.<br/>
-							The searches via the address API do not always gives results. I left these observations without longitude and latitude.
-							A pause is needed after each call to the address API because the number of requests per second is limited.<br/>
-							This project was not easy, as I encountered many of the previously mentioned issues. Finding information through web scraping was the hardest part. But, I managed to retrieve the phone number and website for some observations. <br/><img id="collecte_web_img" src="images/collecte_web.png" alt="data output"><br/>
-							As a potential improvement, I believe <strong>optimizing the program as much as possible is a real advantage for it to run faster and more efficiently</strong>.
+							<strong>Feb.2024 - Mar.2024.</strong> I conducted web data collection.<br />
+							Using the SIRENE database <a class="lien"
+								href="https://www.data.gouv.fr/fr/datasets/base-sirene-des-entreprises-et-de-leurs-etablissements-siren-siret/">data.gouv.fr</a>,
+							<strong>my goal was to complete the information with geographical coordinates (latitude,
+								longitude) via the address API, and other information (phone number, website) obtained
+								via a
+								Google Maps search, using web scraping</strong>.
+							I worked on the "StockEtablissement" file, which has over <strong>38 million rows and 38
+								columns</strong>. I also used the "StockUniteLegale" file with <strong>over 26 million
+								rows
+								and 34 columns</strong>.
+							I manipulated the data by coding it in <strong>Python</strong> using libraries like
+							<strong>pandas, Beautiful Soup, Selenium</strong>. In the end, I delivered the
+							<strong>Notebook</strong> and a short report explaining the process and the difficulties
+							encountered.<br />
+							The files are <strong>very large</strong>, so they need to be read and loaded block by
+							block. I
+							first tested with 1000 rows to make sure that it works before moving on to more rows.<br />
+							When concatenating variables to get the address or the name of the establishment, there are
+							often missing values. I then removed them. I only kept the variables of interest to optimize
+							the
+							process.<br />
+							The searches via the address API do not always gives results. I left these observations
+							without
+							longitude and latitude.
+							A pause is needed after each call to the address API because the number of requests per
+							second
+							is limited.<br />
+							This project was not easy, as I encountered many of the previously mentioned issues. Finding
+							information through web scraping was the hardest part. But, I managed to retrieve the phone
+							number and website for some observations. <br /><img id="collecte_web_img"
+								src="images/collecte_web.png" alt="data output"><br />
+							As a potential improvement, I believe <strong>optimizing the program as much as possible is
+								a
+								real advantage for it to run faster and more efficiently</strong>.
 						</div>
 					</div>
 				</div>
 				<div class="accordion-item">
 					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
 							Implementation of the Nil Database - Decision Support System
 						</button>
 					</h2>
 					<div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
-							<strong>Jan.2024.</strong> With a group of three people, <strong>I implemented a database</strong>. I was approached by the French e-commerce book company Nil.<br/>
-							The objective was to <strong>create a usable SQL database to understand user behavior on the platform</strong>.
-							First, I started by designing the <strong>relational schema of our database</strong>, defining the name and function of each table, and then adding attributes to each table according to the requirements of the client.
-							<br/><img id="schema_rel_img" src="images/SID_projet_schema.png" alt="relational schema"><br/>
-							I created the tables and the relationships using <strong>SQL queries in R</strong> with the DBI and RSQLite libraries. For the data implementation phase, I used existing web databases, client databases (name, first name, and phone number), and book databases (title, author, year of publication) from the site <strong>Kaggle</strong>. Then, I performed SQL queries to test the database and ensure everything was operational: <strong>checking data consistency, relationships, and date formats</strong>. Finally, I created a <strong>dashboard</strong> prototype based on the listed measures.<br/>
-							Special attention was needed for the date variable, as it had to follow a specific format (dd/mm/yyyy hh:mm).
-							<br/><img id="excel_date_img" src="images/SID_projet_date.png" alt="excel date"><br/>
+							<strong>Jan.2024.</strong> With a group of three people, <strong>I implemented a
+								database</strong>. I was approached by the French e-commerce book company Nil.<br />
+							The objective was to <strong>create a usable SQL database to understand user behavior on the
+								platform</strong>.
+							First, I started by designing the <strong>relational schema of our database</strong>,
+							defining
+							the name and function of each table, and then adding attributes to each table according to
+							the
+							requirements of the client.
+							<br /><img id="schema_rel_img" src="images/SID_projet_schema.png"
+								alt="relational schema"><br />
+							I created the tables and the relationships using <strong>SQL queries in R</strong> with the
+							DBI
+							and RSQLite libraries. For the data implementation phase, I used existing web databases,
+							client
+							databases (name, first name, and phone number), and book databases (title, author, year of
+							publication) from the site <strong>Kaggle</strong>. Then, I performed SQL queries to test
+							the
+							database and ensure everything was operational: <strong>checking data consistency,
+								relationships, and date formats</strong>. Finally, I created a
+							<strong>dashboard</strong>
+							prototype based on the listed measures.<br />
+							Special attention was needed for the date variable, as it had to follow a specific format
+							(dd/mm/yyyy hh:mm).
+							<br /><img id="excel_date_img" src="images/SID_projet_date.png" alt="excel date"><br />
 							This project greatly improved my teamwork, organization, and autonomy skills.
 						</div>
 					</div>
 				</div>
 				<div class="accordion-item">
 					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 							Analysis of Geothermal Energy Production in the United States - Time Series
 						</button>
 					</h2>
 					<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
-							<strong>Dec. 2024.</strong> In a team of two, I analyzed a <strong>time series</strong>.<br/>
-							As part of a forecast study using data provided by the EIA (Energy Information Administration), the objective was to <strong>understand geothermal energy production</strong> from 2001 to the end of 2022 and to make <strong>predictions</strong> for the year 2023. The deliverable was a report.
-							<br/><img id="decomposition_img" src="images/serie_temp_decomposition.png" alt="decomposition"><br/>
-							The <strong>series is additive</strong>, with an irregular upward trend. These irregular variations caused by COVID-19 are explained by the trend curve and especially by the residuals. Outliers could explain unexpected variations. We observed a <strong>seasonal pattern</strong> that repeats each year.
-							<br/><img id="prediction_img" src="images/serie_temp_prediction.png" alt="prediction"><br/>
-							I used three <strong>forecasting methods</strong> as indicated above. These three predictions are different from each other. However, they all have the same trend. After adjusting our predictions, we found that the <strong>Holt-Winters</strong> method is the best, as its prediction curve better fits the actual data compared to the other methods, and its mean squared error is the lowest.<br/>
-							This project allowed me to <strong>understand the specifics of time series data analysis</strong>.
+							<strong>Dec. 2024.</strong> In a team of two, I analyzed a <strong>time
+								series</strong>.<br />
+							As part of a forecast study using data provided by the EIA (Energy Information
+							Administration),
+							the objective was to <strong>understand geothermal energy production</strong> from 2001 to
+							the
+							end of 2022 and to make <strong>predictions</strong> for the year 2023. The deliverable was
+							a
+							report.
+							<br /><img id="decomposition_img" src="images/serie_temp_decomposition.png"
+								alt="decomposition"><br />
+							The <strong>series is additive</strong>, with an irregular upward trend. These irregular
+							variations caused by COVID-19 are explained by the trend curve and especially by the
+							residuals.
+							Outliers could explain unexpected variations. We observed a <strong>seasonal
+								pattern</strong>
+							that repeats each year.
+							<br /><img id="prediction_img" src="images/serie_temp_prediction.png"
+								alt="prediction"><br />
+							I used three <strong>forecasting methods</strong> as indicated above. These three
+							predictions
+							are different from each other. However, they all have the same trend. After adjusting our
+							predictions, we found that the <strong>Holt-Winters</strong> method is the best, as its
+							prediction curve better fits the actual data compared to the other methods, and its mean
+							squared
+							error is the lowest.<br />
+							This project allowed me to <strong>understand the specifics of time series data
+								analysis</strong>.
 						</div>
 					</div>
 				</div>
 				<div class="accordion-item">
 					<h2 class="accordion-header">
-					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-						Processing and analysis of an observational study in clinical epidemiology
-					</button>
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							Processing and analysis of an observational study in clinical epidemiology
+						</button>
 					</h2>
 					<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
-							<strong>Feb.2023-Jun.2023.</strong> With my group of 4 people, I thought about a problem based on the data made available to me. This study is based on data from a database provided by the Observational Study in Clinical Epidemiology of 5 US hospitals that applied the RHC method. It concerns 5,735 patients over 18 years of age hospitalized in intensive care between June 1989 and January 1994. RHC, or right heart catheterization, consists in placing a Swan Ganz catheter to resuscitate a patient in serious condition. I wanted to see if this treatment, applied to intensive care patients, was beneficial, if it could save the most people, and more specifically to see if the RHC method was relevant and necessary in certain situations.<br/> The goal was to produce a technical report, a statistical report, a project management report, and a final presentation of the results with slides. The technical report contains the approach I took on <strong>R to clean and sort our data.</strong> Indeed, it was necessary to understand and assimilate the data. After cleaning, my observations went from 5735 patients to 5508 patients. For example, I removed observations that had outliers on a variable. I decided to delete a variable that had a lot of missing values. I also grouped variables into one for easier manipulation later on, etc.<br/>
-							Then <strong>I made graphs and analyses</strong> where I added it to the statistical report. And I presented our results on <strong>Powerpoint</strong> during the oral presentation. Throughout the project, I drew up a project management report, which consisted in planning the project with a Gantt chart, organizing it, and seeing whether the expected time and resources had been respected.<br/>
-							I used R software for data processing and analysis. This project taught me a lot about teamwork, organization and autonomy. 
-							<img id="clinique_img" src="images/clinique_projet.png" alt="tableau épidémiologie Clinique"/>
+							<strong>Feb.2023-Jun.2023.</strong> With my group of 4 people, I thought about a problem
+							based
+							on the data made available to me. This study is based on data from a database provided by
+							the
+							Observational Study in Clinical Epidemiology of 5 US hospitals that applied the RHC method.
+							It
+							concerns 5,735 patients over 18 years of age hospitalized in intensive care between June
+							1989
+							and January 1994. RHC, or right heart catheterization, consists in placing a Swan Ganz
+							catheter
+							to resuscitate a patient in serious condition. I wanted to see if this treatment, applied to
+							intensive care patients, was beneficial, if it could save the most people, and more
+							specifically
+							to see if the RHC method was relevant and necessary in certain situations.<br /> The goal
+							was to
+							produce a technical report, a statistical report, a project management report, and a final
+							presentation of the results with slides. The technical report contains the approach I took
+							on
+							<strong>R to clean and sort our data.</strong> Indeed, it was necessary to understand and
+							assimilate the data. After cleaning, my observations went from 5735 patients to 5508
+							patients.
+							For example, I removed observations that had outliers on a variable. I decided to delete a
+							variable that had a lot of missing values. I also grouped variables into one for easier
+							manipulation later on, etc.<br />
+							Then <strong>I made graphs and analyses</strong> where I added it to the statistical report.
+							And
+							I presented our results on <strong>Powerpoint</strong> during the oral presentation.
+							Throughout
+							the project, I drew up a project management report, which consisted in planning the project
+							with
+							a Gantt chart, organizing it, and seeing whether the expected time and resources had been
+							respected.<br />
+							I used R software for data processing and analysis. This project taught me a lot about
+							teamwork,
+							organization and autonomy.
+							<img id="clinique_img" src="images/clinique_projet.png"
+								alt="tableau épidémiologie Clinique" />
 
 						</div>
 					</div>
 				</div>
 				<div class="accordion-item">
 					<h2 class="accordion-header">
-					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-						Structuring LAC group data
-					</button>
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+							Structuring LAC group data
+						</button>
 					</h2>
 					<div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
-							<strong>May.2023 - Jun.2023.</strong> Within the LAC distribution group (Leclerc, Auchan, Carrefour), our team (of 4 people) aims to <strong>structure data by implementing a database for decision-making purposes</strong>. Here, we are looking to monitor <strong>forecasting in the fruit and vegetable food sector</strong>. First, we had to create the <strong>conceptual and logical data model</strong>.<img id="mcd_img" src="images/mcd_sgbd.png" alt="Modèle Conceptuel des Données"/> <br/> Then we <strong>cleaned and reformatted the data</strong>. We created the database using <strong>queries on Access</strong>. We also identified any anomalies. After calculating productivity and the rate of change, we were able to conclude whether or not to allocate headcount to the various sites.<br/>I was the <strong>group leader</strong>. Moreover, we produced the <strong>best project of the promo</strong>. It wasn't always easy and straightforward. After all, we hadn't quite mastered Access at the time. It took a lot of trial and error to get to the end. There were a lot of queries to be made, which can quickly get us lost. We also have other projects at the same time, which doesn't leave us much time for rest and relaxation. But, thinking about the conceptual data model, implementing the database, and finding an answer to the problem based on this data are interesting and rewarding tasks. Because it prepares us for the eventual missions we may encounter in the professional world. 
+							<strong>May.2023 - Jun.2023.</strong> Within the LAC distribution group (Leclerc, Auchan,
+							Carrefour), our team (of 4 people) aims to <strong>structure data by implementing a database
+								for
+								decision-making purposes</strong>. Here, we are looking to monitor <strong>forecasting
+								in
+								the fruit and vegetable food sector</strong>. First, we had to create the
+							<strong>conceptual
+								and logical data model</strong>.<img id="mcd_img" src="images/mcd_sgbd.png"
+								alt="Modèle Conceptuel des Données" /> <br /> Then we <strong>cleaned and reformatted
+								the
+								data</strong>. We created the database using <strong>queries on Access</strong>. We also
+							identified any anomalies. After calculating productivity and the rate of change, we were
+							able to
+							conclude whether or not to allocate headcount to the various sites.<br />I was the
+							<strong>group
+								leader</strong>. Moreover, we produced the <strong>best project of the promo</strong>.
+							It
+							wasn't always easy and straightforward. After all, we hadn't quite mastered Access at the
+							time.
+							It took a lot of trial and error to get to the end. There were a lot of queries to be made,
+							which can quickly get us lost. We also have other projects at the same time, which doesn't
+							leave
+							us much time for rest and relaxation. But, thinking about the conceptual data model,
+							implementing the database, and finding an answer to the problem based on this data are
+							interesting and rewarding tasks. Because it prepares us for the eventual missions we may
+							encounter in the professional world.
 
 						</div>
 					</div>
@@ -436,7 +696,7 @@
 		</div>
 		<!--************************* fin de la section projets à l'IUT *************************-->
 		<!--************************* fin de la page projets *************************-->
-		
+
 		<!--************************* début de la page me contacter *************************-->
 		<h1 class="title">Contact me</h1>
 		<div id="myForm">
@@ -454,40 +714,42 @@
 					<textarea class="form-control" id="message" rows="3" required></textarea>
 				</div>
 				<button id="btnSubmit" type="submit" class="btn btn-primary" onclick="sendEmail()">Send</button>
-			</form>	
+			</form>
 		</div>
 		<!--************************* fin de la page me contacter *************************-->
 		<footer>
 			<a class="lienFooter" href="http://www.linkedin.com/in/laurent-chen8" target="_blank">
-				<img class="logoFooter" alt="Logo Linkdin" src="images/Linkedin_logo.png"/>
+				<img class="logoFooter" alt="Logo Linkdin" src="images/Linkedin_logo.png" />
 				Laurent Chen
 			</a>
 			<a class="lienFooter" href="fichiers/CHEN_Laurent_CV_EN.pdf" target="_blank">
-				<img class="logoFooter" alt="CV" src="images/cv_icon.png"/>
+				<img class="logoFooter" alt="CV" src="images/cv_icon.png" />
 				My CV
 			</a>
 		</footer>
-		
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-		
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"></script>
+
 		<script>
-		<!-- envoie mailenvoie mail -->
+			<!-- envoie mailenvoie mail -->
 			function sendEmail() {
 				var form = document.getElementById("formulaire");
 				var name = form.elements["name"].value;
 				var email = form.elements["email"].value;
 				var message = form.elements["message"].value;
-				
+
 				var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-				 
+
 				if (name && email && message && emailPattern.test(email)) {
-				var mailtoLink = "mailto:laurent.chen.pro@gmail.com" +
-								"?subject=" + encodeURIComponent("Site portfolio : Nouveau message de " + name) +
-								"&body=" + encodeURIComponent("Nom: " + name + "\n" + 
-															"Email: " + email + "\n\n" +
-															"Message:\n" + message);
-				
-				window.location.href = mailtoLink;
+					var mailtoLink = "mailto:laurent.chen.pro@gmail.com" +
+						"?subject=" + encodeURIComponent("Site portfolio : Nouveau message de " + name) +
+						"&body=" + encodeURIComponent("Nom: " + name + "\n" +
+							"Email: " + email + "\n\n" +
+							"Message:\n" + message);
+
+					window.location.href = mailtoLink;
 				}
 				else {
 					if (!emailPattern.test(email)) {
@@ -499,5 +761,6 @@
 				}
 			}
 		</script>
-	</body>
+</body>
+
 </html>
