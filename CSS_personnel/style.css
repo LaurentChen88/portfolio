@@ -482,22 +482,6 @@ h3{
 /* fin style projets */
 
 
-.accordion{
-	width: 70%;
-	margin: 2% 0 0 15%;
-}
-
-#capiManager_img{
-	width: 100%;
-	height: auto;
-}
-
-#stockLocal_img{
-	margin-left: 10%;
-	width: 80%;
-	height: auto;
-}
-
 /* On stylise la balise form */
 #formulaire{
 	width: 60%;
@@ -585,14 +569,6 @@ footer{
     opacity: 0.7;
 }
 
-
-.accordion-button{
-	font-size: 90%;
-}
-
-.accordion-collapse{
-	font-size: 125%;
-}
 
 /* Media Queries */
 /* Responsive : Écrans moyens */
