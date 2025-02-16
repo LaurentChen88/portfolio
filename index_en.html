@@ -234,7 +234,7 @@
 							<p class="card-text"> Statistical analysis and data utilization<br /> Survey data
 								processing<br />
 								Statistical and predictive modeling<br /> Time series analysis<br />
-								Scoring and classification</p>
+								Scoring and classification<br /> Big Data and Machine Learning</p>
 						</div>
 					</div>
 				</div>
@@ -465,7 +465,7 @@
 							<div class="card-body">
 								<h5 class="card-title">Development of a Modern Survey Questionnaire</h5>
 								<!-- Section date -->
-								<p class="card-date text-muted">Timeframe : <strong>2024 - Ongoing</strong></p>
+								<p class="card-date text-muted">Timeframe : <strong>2024</strong></p>
 								<!-- Description -->
 								<p class="card-text">
 									Creation of a modern, reusable survey questionnaire, including frontend and backend
@@ -584,6 +584,70 @@
 			<div id="projets_academiques">
 				<h1 class="title">Academic Projects</h1>
 				<!-- Première ligne -->
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-4 g-4">
+					<!-- Outil Décisionnel SNCF -->
+					<div class="col">
+						<div class="card card-projets">
+							<img src="images/Sncf-logo.svg.png" class="card-img-top" alt="Sncf">
+							<div class="card-body">
+								<h5 class="card-title">SNCF Decision-Making Tool</h5>
+								<!-- Section date -->
+								<p class="card-date text-muted">Timeframe : <strong>November 2024 - January
+										2025</strong></p>
+								<!-- Description -->
+								<p class="card-text">
+									Application using a route calculator to suggest the most suitable journey based on
+									personalized criteria such as speed, cost, or carbon footprint.
+								</p>
+								<!-- Section tags -->
+								<div class="card-tags mb-3">
+									<span class="badge bg-primary">Streamlit</span>
+									<span class="badge bg-success">API</span>
+									<span class="badge bg-secondary">Teamwork</span>
+									<span class="badge bg-info text-dark">Interactive Visualization</span>
+									<span class="badge bg-warning text-dark">Decision-Making Tool</span>
+								</div>
+								<a class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#projet-sncf">
+									<i class="fa-solid fa-magnifying-glass"></i> Details</a>
+								<a href="https://outil-snc-5cdo8t5yykqdshhuuj3ywa.streamlit.app/"
+									class="btn btn-primary" target="_blank">
+									<i class="fa-solid fa-play"></i> Test the project</a>
+							</div>
+						</div>
+					</div>
+					<!-- Développement logiciel Titanic -->
+					<div class="col">
+						<div class="card card-projets">
+							<img src="images/titanic.jpg" class="card-img-top" alt="titanic">
+							<div class="card-body">
+								<h5 class="card-title">Titanic Software Development</h5>
+								<!-- Section date -->
+								<p class="card-date text-muted">Timeframe : <strong>January 2025</strong></p>
+								<!-- Description -->
+								<p class="card-text">
+									Applying software engineering best practices to the Titanic Survival Prediction
+									project, using the collaborative tool Git, to predict the survival chances of
+									Titanic passengers.
+								</p>
+								<!-- Section tags -->
+								<div class="card-tags mb-3">
+									<span class="badge bg-primary">Python</span>
+									<span class="badge bg-success">Kaggle</span>
+									<span class="badge bg-secondary">Teamwork</span>
+									<span class="badge bg-info text-dark">Machine Learning</span>
+									<span class="badge bg-warning text-dark">GitHub</span>
+								</div>
+								<a class="btn btn-secondary" data-bs-toggle="modal"
+									data-bs-target="#projet-developpement-logiciel-titanic">
+									<i class="fa-solid fa-magnifying-glass"></i> Details</a>
+								<a href="https://github.com/LaurentChen88/developpement-logiciel"
+									class="btn btn-primary" target="_blank">
+									<i class="fa-solid fa-eye"></i> View the GitHub</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Deuxième ligne -->
 				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-4 g-4">
 					<!-- Outil Décisionnel YouTube 2023 -->
 					<div class="col">
@@ -706,7 +770,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- Deuxième ligne -->
+				<!-- Troisième ligne -->
 				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-4 g-4">
 					<!-- Analyse de la production d'énergie géothermique aux États-Unis en série temporelle -->
 					<div class="col">
@@ -805,6 +869,90 @@
 				<div id="imageModale" class="modale">
 					<img class="modale-content" id="imageZoom">
 				</div>
+				<!-- Modal Projet SNCF-->
+				<div class="modal fade" id="projet-sncf" tabindex="-1" aria-labelledby="exampleModalLabel"
+					aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-5" id="exampleModalLabel">SNCF Decision-Making Tool</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"
+									aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<strong>General Description :</strong><br />
+								Application using a route calculator to suggest the most suitable journey based on
+								personalized criteria such as speed, cost, or carbon footprint.
+								<br /><br />
+								<div class="image-container">
+									<img src="images/sncf-projet.png" alt="Application Sncf">
+									<div class="overlay">
+										<div class="icon-container">
+											<i class="fa-solid fa-eye"></i>
+										</div>
+									</div>
+								</div>
+								<br />
+								<strong>Technical Details :</strong><br />
+								Implemented with Streamlit using the Île-de-France Mobilités API, Geovelo, and Nominatim
+								for address geocoding.
+								<br /><br />
+								<strong>Source:</strong><br />
+								<a class="lien" href="https://prim.iledefrance-mobilites.fr/en/catalogue-data?type=api"
+									target="_blank">Île-de-France Mobilités API</a>
+								<br /><br />
+								<strong>Personal Reflections :</strong><br />
+								I would like to add a multimodal routing feature, such as bike+train, and merge the
+								public transport section with the bike section on a single page.
+								Although this project presented some challenges, working with API data was a very
+								interesting experience.
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								<a href="https://outil-snc-5cdo8t5yykqdshhuuj3ywa.streamlit.app/"
+									class="btn btn-primary" target="_blank">
+									<i class="fa-solid fa-play"></i> Test the project</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Modal Projet developpement-logiciel-titanic-->
+				<div class="modal fade" id="projet-developpement-logiciel-titanic" tabindex="-1"
+					aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-5" id="exampleModalLabel">Titanic Software Development</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"
+									aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<strong>General Description :</strong><br />
+								Applying software engineering best practices to the Titanic Survival Prediction project,
+								using the collaborative tool Git, to predict the survival chances of Titanic passengers.
+								<br /><br />
+								<strong>Technical Details:</strong><br />
+								Refactored the code into modular Python scripts, applied software engineering best
+								practices (PEP 8, unit testing, documentation), collaborated via Git/GitHub, and
+								automated the workflow with a CI/CD pipeline.
+								<br /><br />
+								<strong>Source:</strong><br />
+								<a class="lien" href="https://www.kaggle.com/code/alexisbcook/titanic-tutorial/notebook"
+									target="_blank">Kaggle - Titanic Tutorial</a>
+								<br /><br />
+								<strong>Personal Reflections :</strong><br />
+								A particularly enriching project in software engineering.
+								Due to a lack of time, I was unable to integrate a Dockerfile.
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								<a href="https://github.com/LaurentChen88/developpement-logiciel"
+									class="btn btn-primary" target="_blank">
+									<i class="fa-solid fa-eye"></i> View the GitHub</a>
+							</div>
+						</div>
+					</div>
+				</div>
 				<!-- Modal Projet YouTube-->
 				<div class="modal fade" id="projet-youtube" tabindex="-1" aria-labelledby="exampleModalLabel"
 					aria-hidden="true">
@@ -833,6 +981,7 @@
 								<strong>Technical Details :</strong><br />
 								Built with Shiny using the Plotly library for interactive charts.
 								<br /><br />
+								<strong>Source:</strong><br />
 								<a class="lien"
 									href="https://www.kaggle.com/datasets/nelgiriyewithana/global-youtube-statistics-2023"
 									target="_blank">Global YouTube Statistics 2023 - Kaggle</a>
@@ -878,7 +1027,7 @@
 								<strong>Technical Details :</strong><br />
 								Built with Shiny using the Plotly library for interactive charts.
 								<br /><br />
-								<strong>Source des données:</strong><br />
+								<strong>Source:</strong><br />
 								<a class="lien" href="https://www.kaggle.com/datasets/aayushmishra1512/twitchdata"
 									target="_blank">Top Streamers on Twitch - Kaggle</a>
 								<br /><br />
