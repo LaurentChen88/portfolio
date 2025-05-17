@@ -593,6 +593,33 @@
 				<h1 class="title">Projets académiques</h1>
 				<!-- Première ligne -->
 				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-4 g-4">
+					<!-- City Fighting - Comparateur de villes en France -->
+					<div class="col">
+						<div class="card card-projets">
+							<img src="images/city-fighting-projet.png" class="card-img-top" alt="City Fighting">
+							<div class="card-body">
+								<h5 class="card-title">City Fighting - Comparateur de villes en France</h5>
+								<!-- Section date -->
+								<p class="card-date text-muted">Réalisé en : <strong>Mars - Avril 2025</strong></p>
+								<!-- Description -->
+								<p class="card-text">
+									Application permettant de comparer plusieurs villes françaises sur des aspects démographiques, d'emploi, de logement, de la météo, des points d'intérêt et de l'offre de formation.
+								</p>
+								<!-- Section tags -->
+								<div class="card-tags mb-3">
+									<span class="badge bg-primary">Python</span>
+									<span class="badge bg-success">Streamlit</span>
+									<span class="badge bg-secondary">Travail en équipe</span>
+									<span class="badge bg-info text-dark">Outil décisionnel</span>
+									<span class="badge bg-warning text-dark">API</span>
+								</div>
+								<a class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#projet-city-fighting">
+									<i class="fa-solid fa-magnifying-glass"></i> Détails</a>
+								<a href="https://city-fighting.streamlit.app/" class="btn btn-primary" target="_blank">
+									<i class="fa-solid fa-play"></i> Tester le projet</a>
+							</div>
+						</div>
+					</div>
 					<!-- Outil Décisionnel SNCF -->
 					<div class="col">
 						<div class="card card-projets">
@@ -880,6 +907,62 @@
 				<div id="imageModale" class="modale">
 					<img class="modale-content" id="imageZoom">
 				</div>
+				<!-- Modal Projet City Fighting-->
+				<div class="modal fade" id="projet-city-fighting" tabindex="-1" aria-labelledby="cityFightingModalLabel"
+					aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-5" id="cityFightingModalLabel">City Fighting - Comparateur de villes en France</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<p><strong>Réalisé en :</strong> Mars - Avril 2025</p>
+								<p><strong>Contexte :</strong> Projet réalisé dans le cadre du projet outil décisionnel en fin de 3ème année en BUT Science des Données à l'IUT de Paris - Rives de Seine.</p>
+
+								<strong>Description du projet :</strong>
+								<p>City Fighting est une application web interactive permettant de comparer plusieurs villes françaises sur différents aspects tels que :</p>
+								<ul>
+									<li>Données démographiques</li>
+									<li>Marché de l'emploi</li>
+									<li>Marché immobilier et logement</li>
+									<li>Données météorologiques</li>
+									<li>Points d'intérêt</li>
+									<li>Offre de formation</li>
+								</ul>
+								<div class="image-container">
+									<img src="images/city-fighting-projet.png" alt="Capture d'écran de l'application City Fighting" />
+									<div class="overlay">
+										<div class="icon-container">
+											<i class="fa-solid fa-eye"></i>
+										</div>
+									</div>
+								</div>
+								<br/>
+								<strong>Détails techniques :</strong>
+								<p>Le projet repose sur la collecte et le traitement de données via des <strong>API</strong>, permettant d'accéder à des informations en temps réel et de les structurer pour une exploitation optimale. Ces données sont ensuite mises en valeur à travers une visualisation interactive développée avec <strong>Streamlit</strong>, offrant à l'utilisateur une interface intuitive pour explorer les résultats via des graphiques et filtres dynamiques.</p>
+								<strong>Source :</strong>
+								<ul style="color: #555; line-height: 1.6;">
+									<li>🌍 <strong>Population</strong> : <a href="https://geo.api.gouv.fr" target="_blank">geo.api.gouv.fr</a></li>
+									<li>📊 <strong>Données générales, emploi, logement, formation</strong> : <a href="https://data.gouv.fr" target="_blank">data.gouv.fr</a></li>
+									<li>💼 <strong>Offres d'emploi</strong> : <a href="https://www.data.gouv.fr/fr/dataservices/api-offres-demploi/" target="_blank">data.gouv.fr</a></li>
+									<li>☁️ <strong>Météo</strong> : <a href="https://openweathermap.org" target="_blank">API OpenWeatherMap</a> et <a href="https://meteostat.net" target="_blank">meteostat.net</a></li>
+									<li>📍 <strong>Points d'intérêt</strong> : <a href="https://overpass-api.de" target="_blank">API Overpass</a></li>
+								</ul>
+								<br/>
+								<strong>Avis personnels :</strong>
+								<p>Ce projet m'a fortement sollicité sur le travail en équipe, notamment à travers l'utilisation de Git pour la gestion de version. J'ai également appris à collaborer efficacement en travaillant et en optimisant le code d'autres contributeurs, un exercice parfois complexe, mais très formateur. C'est un projet que l'on pourrait toujours améliorer, mais dans le temps imparti, nous avons fait de notre mieux pour proposer une application à la fois intuitive et pertinente.</p>
+
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+								<a href="https://city-fighting.streamlit.app/" class="btn btn-primary" target="_blank">
+									<i class="fa-solid fa-play"></i> Tester le projet</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<!-- Modal Projet SNCF-->
 				<div class="modal fade" id="projet-sncf" tabindex="-1" aria-labelledby="exampleModalLabel"
 					aria-hidden="true">
@@ -910,7 +993,7 @@
 								Nominatim
 								pour géocoder une adresse.
 								<br /><br />
-								<strong>Source:</strong><br />
+								<strong>Source :</strong><br />
 								<a class="lien" href="https://prim.iledefrance-mobilites.fr/fr/catalogue-data?type=api"
 									target="_blank">API d'Ile-de-France Mobilités</a>
 								<br /><br />
