@@ -583,8 +583,35 @@
 			<!--************************* début de la section Projets académiques *************************-->
 			<div id="projets_academiques">
 				<h1 class="title">Academic Projects</h1>
-				<!-- Première ligne -->
+				<!-- First row -->
 				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-4 g-4">
+					<!-- City Fighting - French Cities Comparator -->
+					<div class="col">
+						<div class="card card-projets">
+							<img src="images/city-fighting-projet.png" class="card-img-top" alt="City Fighting">
+							<div class="card-body">
+								<h5 class="card-title">City Fighting - French Cities Comparator</h5>
+								<!-- Section date -->
+								<p class="card-date text-muted">Timeframe : <strong>March - April 2025</strong></p>
+								<!-- Description -->
+								<p class="card-text">
+									Application that allows comparison of several French cities based on demographics, employment, housing, weather, points of interest, and educational opportunities.								
+								</p>
+								<!-- Section tags -->
+								<div class="card-tags mb-3">
+									<span class="badge bg-primary">Python</span>
+									<span class="badge bg-success">Streamlit</span>
+									<span class="badge bg-secondary">Teamwork</span>
+									<span class="badge bg-info text-dark">Decision tool</span>
+									<span class="badge bg-warning text-dark">API</span>
+								</div>
+								<a class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#projet-city-fighting">
+									<i class="fa-solid fa-magnifying-glass"></i> Details</a>
+								<a href="https://city-fighting.streamlit.app/" class="btn btn-primary" target="_blank">
+									<i class="fa-solid fa-play"></i> Test the project</a>
+							</div>
+						</div>
+					</div>
 					<!-- Outil Décisionnel SNCF -->
 					<div class="col">
 						<div class="card card-projets">
@@ -869,6 +896,62 @@
 				<div id="imageModale" class="modale">
 					<img class="modale-content" id="imageZoom">
 				</div>
+				<!-- Modal Projet City Fighting-->
+				<div class="modal fade" id="projet-city-fighting" tabindex="-1" aria-labelledby="cityFightingModalLabel"
+					aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-5" id="cityFightingModalLabel">City Fighting - Comparateur de villes en France</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<p><strong>Timeframe :</strong> March - April 2025</p>
+								<p><strong>Context :</strong> Project completed during the third year of the Data Science Bachelor's program at IUT de Paris – Rives de Seine, as part of a course on decision-making tools.</p>
+
+								<strong>Description of the project :</strong>
+								<p>City Fighting is an interactive web application that allows users to compare several French cities based on various aspects such as :</p>
+								<ul>
+									<li>Demographic data</li>
+									<li>Job market</li>
+									<li>Real estate and housing</li>
+									<li>Weather data</li>
+									<li>Points of interest</li>
+									<li>Educational opportunities</li>
+								</ul>
+								<div class="image-container">
+									<img src="images/city-fighting-projet.png" alt="Screenshot of the City Fighting application" />
+									<div class="overlay">
+										<div class="icon-container">
+											<i class="fa-solid fa-eye"></i>
+										</div>
+									</div>
+								</div>
+								<br/>
+								<strong>Technical details :</strong>
+								<p>The project uses <strong>APIs</strong> to collect and process real-time data, making it easy to organize and use. The data is then presented with <strong>Streamlit</strong> in an interactive and user-friendly interface, with dynamic charts and filters to explore the results.</p>
+								<strong>Source :</strong>
+								<ul style="color: #555; line-height: 1.6;">
+									<li>🌍 <strong>Population</strong> : <a href="https://geo.api.gouv.fr" target="_blank">geo.api.gouv.fr</a></li>
+									<li>📊 <strong>General data, employment, housing, education</strong> : <a href="https://data.gouv.fr" target="_blank">data.gouv.fr</a></li>
+									<li>💼 <strong>Job offers</strong> : <a href="https://www.data.gouv.fr/fr/dataservices/api-offres-demploi/" target="_blank">data.gouv.fr</a></li>
+									<li>☁️ <strong>Weather</strong> : <a href="https://openweathermap.org" target="_blank">API OpenWeatherMap</a> and <a href="https://meteostat.net" target="_blank">meteostat.net</a></li>
+									<li>📍 <strong>Points of interest</strong> : <a href="https://overpass-api.de" target="_blank">API Overpass</a></li>
+								</ul>
+								<br/>
+								<strong>Personal reflections :</strong>
+								<p>This project required a lot of teamwork, especially through the use of Git for version control. I also learned how to collaborate effectively by working on and improving code written by others — a sometimes challenging but very valuable experience. It’s a project that could always be improved, but within the time we had, we did our best to deliver an application that is both intuitive and relevant.</p>
+
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								<a href="https://city-fighting.streamlit.app/" class="btn btn-primary" target="_blank">
+									<i class="fa-solid fa-play"></i> Test the project</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<!-- Modal Projet SNCF-->
 				<div class="modal fade" id="projet-sncf" tabindex="-1" aria-labelledby="exampleModalLabel"
 					aria-hidden="true">
