@@ -481,6 +481,65 @@ h3{
 
 /* fin style projets */
 
+/* Style du footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Style des liens dans le footer */
+.lienFooter {
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.lienFooter:hover {
+    transform: scale(1.1);
+}
+
+/* Style des images dans le footer */
+.logoFooter {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+/* Style spécifique pour l'icône GitHub */
+.lienFooter .fa-github {
+    font-size: 40px; /* Taille similaire aux autres icônes */
+    color: white;
+    vertical-align: middle;
+}
+
+.lienFooter:hover .fa-github {
+    color: #6e5494; /* Couleur GitHub au survol */
+}
+
+/* Style du bouton CV */
+.btnCv {
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btnCv:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 
 /* On stylise la balise form */
 #formulaire{
